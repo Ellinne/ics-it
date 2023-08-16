@@ -1,0 +1,4 @@
+USE ICS_IT
+GO
+CREATE VIEW vw_SKUPrice AS
+SELECT *, dbo.udf_GetSKUPrice(SKU.ID) FROM SKU;
